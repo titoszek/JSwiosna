@@ -1,0 +1,34 @@
+<html lang="pl">
+<head>
+ <meta charset="utf-8">
+ <title> Przykład użycia pętli </title>
+ <div style="color:red;font-size:18px">
+ <script language="JavaScript">
+ var x=prompt("podaj liczbe 1=","");
+ var liczba1_Dzi=parseInt(x);
+ var x=prompt("podaj liczbe 2=","");
+ var liczba2_Dzi=parseInt(x);
+ 
+ if(liczba1_Dzi<liczba2_Dzi){
+ for(i=liczba1_Dzi;i<=liczba2_Dzi;i++){
+ if(i%2==1){
+ document.write("<p style=\"font-size:18px;color:black;\"><br>"+i+"<br></p>");
+ }
+ }
+ }
+ else if(liczba1_Dzi>liczba2_Dzi){
+ for(i=liczba1_Dzi;i>liczba2_Dzi;i--){
+ if(i%2==1){
+ document.write("<p style=\"font-size:18px;color:black;\"><br>"+i+"<br></p>");
+ }
+ }
+ }
+ else if(liczba1_Dzi==liczba2_Dzi){
+ document.write("Brak obliczen <br>");
+ }
+ </script>
+ </div>
+</head>
+<body>
+</body>
+</html>
